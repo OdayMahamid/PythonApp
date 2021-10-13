@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/BitcoinPrice')
 def BitcoinPrice():
-    timeout = time.time() + 60   
+    timeout = time.time() + 60
     sumPrice = 0
     count=0
     while time.time() < timeout:
