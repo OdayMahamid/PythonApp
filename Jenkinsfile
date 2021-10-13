@@ -10,8 +10,6 @@ pipeline{
 	stage('Build') {
 
 			steps {
-                                sh 'sudo chmod 777 /var/run/docker.sock'
-                                sh 'echo 2211'
 				sh 'docker build -t bitcoin .'			}
 		}
 		stage('Login') {
