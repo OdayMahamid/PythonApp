@@ -11,7 +11,8 @@ pipeline{
 		stage('Build') {
 
 			steps {
-                                sh 'sudo chmod 666 /var/run/docker.sock'
+                               sh 'sudo chmod 666 /var/run/docker.sock'
+                               echo 2211
 				sh 'docker build -t bitcoin .'
 
 			}
