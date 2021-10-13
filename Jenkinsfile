@@ -7,11 +7,7 @@ pipeline{
 	}
 
 	stages {
-	stage('Build') {
 
-			steps {
-				sh 'docker build -t bitcoin .'			}
-		}
 		stage('Login') {
 
 			steps {
