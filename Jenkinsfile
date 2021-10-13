@@ -19,7 +19,7 @@ pipeline{
 
 			steps {
                                 sh 'docker tag bitcoin:latest oday2211/bitcoin'
-				sh 'docker push oday2211/bitcoin:latest'
+				sh 'docker push oday2211/bitcoin'
 			}
 		}
 	}
