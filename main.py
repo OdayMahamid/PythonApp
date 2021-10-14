@@ -13,7 +13,9 @@ def BitcoinPrice():
     count=0
     while time.time() < timeout:
         count = count+1
+        # request's response
         response = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json')
+        # get the http request's response as a json object
         data = response.json()
         USDprice = (data["bpi"]["USD"]["rate"])
         CurrentPrice = USDprice.replace("$", "").replace(",", "")
