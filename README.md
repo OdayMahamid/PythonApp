@@ -1,6 +1,6 @@
 # PythonApp
 
-## Instructions for running the app via DOCKERfile
+## Instructions for running the app via Dockerfile
 #build docker image
 
 docker build -t bitcoin .
